@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <title>Button</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+  <style>
+    :root {
+      --ion-safe-area-top: 20px;
+      --ion-safe-area-bottom: 22px;
+    }
+
+    header {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.25em;
+      text-transform: uppercase;
+    }
+
+    section {
+      margin-top: 1em;
+      margin-bottom: 2.5em;
+    }
+
+    section:not(.full-width),
+    .full-width > header {
+      padding: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <ion-app>
+    <ion-header translucent>
+      <ion-toolbar>
+        <ion-title>Button</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content fullscreen>
+
+      <section>
+        <header>Small Size</header>
+        <ion-button size="small">Add</ion-button>
+        <ion-button size="small" color="secondary">Submit</ion-button>
+        <ion-button size="small" color="tertiary">Delete</ion-button>
+        <ion-button size="small" color="tertiary">Back</ion-button>
+      </section>
+
+      <section>
+        <header>Default Size</header>
+        <ion-button>Delete</ion-button>
+        <ion-button color="success">Delete</ion-button>
+        <ion-button color="warning">Delete</ion-button>
+        <ion-button color="danger">Delete</ion-button>
+      </section>
+
+      <section>
+        <header>Large Size</header>
+        <ion-button size="large" color="light">Light</ion-button>
+        <ion-button size="large" color="medium">Medium</ion-button>
+        <ion-button size="large" color="dark">Dark</ion-button>
+      </section>
+
+      <section>
+        <header>Block Width</header>
+        <ion-button expand="block">A block button</ion-button>
+      </section>
+
+      <section class="full-width">
+        <header>Full Width</header>
+        <ion-button expand="full" color="secondary">A full-width button</ion-button>
+      </section>
+
+    </ion-content>
+  </ion-app>
+</body>
+</html>
